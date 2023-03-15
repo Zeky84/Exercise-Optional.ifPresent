@@ -16,7 +16,7 @@ public class SuspectLocationService {
         String capitalizeTotalName="";
         String[] splitFullName = name.split(" ");
         for (String word: splitFullName){
-            String capWord =  word.substring(0,1)+word.substring(1).toLowerCase();
+            String capWord =  word.charAt(0)+word.substring(1).toLowerCase();
             capitalizeTotalName += capWord + " ";
         }
         return capitalizeTotalName;
